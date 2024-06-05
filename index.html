@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="console.log('Quantity is ' + qty)">Show Qty</button>
-    <button onclick="
-        console.log('Your quantity is ' + (qty+1));
-    ">Add Qty</button>
-    <button onclick="
-        console.log('Your quantity is ' + (qty+2));
-    ">+2</button>
-    <button onclick="
-        console.log('Your quantity is ' + (qty+3));
-    ">+3</button>
-    <button onclick="
-        console.log('You have ' + qty + ' items')
-    ">Clear cart</button>
-    
+    <button
+      onclick="
+        console.log('Your quantity is ' + (qty = qty + 1) +'. Your total is ' + qty);" >
+      Add Qty
+    </button>
+    <button
+      onclick="
+        console.log('Your quantity is ' + (qty = qty +2) +'. Your total is ' + qty);">
+      +2
+    </button>
+    <button
+      onclick="
+        console.log('Your quantity is ' + (qty = qty + 3) +'. Your total is ' + qty);">
+      +3
+    </button>
+    <button
+      onclick="
+        qty = 0;
+        console.log('You have ' + qty + ' items')">
+      Clear cart
+    </button>
 
     <script>
-        let qty = 0;
+      let qty = 0;
     </script>
-</body>
+  </body>
 </html>
