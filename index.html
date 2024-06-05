@@ -9,17 +9,19 @@
     <button onclick="console.log('Quantity is ' + qty)">Show Qty</button>
     <button
       onclick="
-        console.log('Your quantity is ' + (qty = qty + 1) +'. Your total is ' + qty);" >
+      
+        console.log(` Your quantity is ${++qty} your total is ${qty}  `);
+        " >
       Add Qty
     </button>
     <button
       onclick="
-        console.log('Your quantity is ' + (qty = qty +2) +'. Your total is ' + qty);">
+        console.log('Your quantity is ' + (qty = qty+=2) +'. Your total is ' + qty);">
       +2
     </button>
     <button
       onclick="
-        console.log('Your quantity is ' + (qty = qty + 3) +'. Your total is ' + qty);">
+        console.log('Your quantity is ' + (qty = qty+= 3) +'. Your total is ' + qty);">
       +3
     </button>
     <button
