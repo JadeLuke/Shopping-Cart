@@ -1,0 +1,24 @@
+.maindiv{
+    /* border: solid black; */
+    height: 400px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 350px;
+    border: solid;
+    background-color: rgb(230, 225, 225);
+    border-radius: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-width:thin ;
+}
+form{
+    flex-direction: column;
+    display: flex;
+    width: 200px;
+}

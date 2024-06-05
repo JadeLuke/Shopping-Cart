@@ -4,35 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button onclick="console.log('Quantity is ' + qty)">Show Qty</button>
-    <button
-      onclick="
-      
-        console.log(` Your quantity is ${++qty} your total is ${qty}  `);
-        " >
-      Add Qty
-    </button>
-    <button
-      onclick="
-        console.log('Your quantity is ' + (qty = qty+=2) +'. Your total is ' + qty);">
-      +2
-    </button>
-    <button
-      onclick="
-        console.log('Your quantity is ' + (qty = qty+= 3) +'. Your total is ' + qty);">
-      +3
-    </button>
-    <button
-      onclick="
-        qty = 0;
-        console.log('You have ' + qty + ' items')">
-      Clear cart
-    </button>
+    <h1>Javascript Practice report</h1>
 
-    <script>
-      let qty = 0;
+    <div class="maindiv">
+    <div class="container">
+    <form>
+        <label for="mathMark">Maths</label>
+        <input type="text" placeholder="Enter your marks" id="mathMark">
+       <label for="labels">Geography</label> 
+        <input type="number" placeholder="Enter your marks" id="geoMark">
+        <label for="labels">English</label> 
+        <input type="number" placeholder="Enter your marks" class="labels">
+        <label for="labels">Afrikaans</label> 
+        <input type="number" placeholder="Enter your marks" class="labels">
+        <label for="labels">Business studies</label> 
+        <input type="number" placeholder="Enter your marks" class="labels">
+        <label for="labels">IT</label> 
+        <input type="number" placeholder="Enter your marks" class="labels">
+        <label for="labels">Science</label> 
+        <input type="number" placeholder="Enter your marks" class="labels">
+        <br>
+        <button id="calcAvg">Calculate Results</button>
+    </form>
+    </div>
+    </div>
+
+    <script src="main.js">
     </script>
   </body>
 </html>
