@@ -6,8 +6,23 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="console.log('Quantity is ' + qty)">Show Qty</button>
+    <button onclick="
+        console.log('Your quantity is ' + (qty+1));
+    ">Add Qty</button>
+    <button onclick="
+        console.log('Your quantity is ' + (qty+2));
+    ">+2</button>
+    <button onclick="
+        console.log('Your quantity is ' + (qty+3));
+    ">+3</button>
+    <button onclick="
+        console.log('You have ' + qty + ' items')
+    ">Clear cart</button>
     
 
-    <script src="main.js"></script>
+    <script>
+        let qty = 0;
+    </script>
 </body>
 </html>
