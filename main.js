@@ -19,11 +19,13 @@
    
     if ( avg >= 50)
     {
+        document.getElementById("displayy").style.color = "green";
         results.innerHTML = "You have passed with an Average of " + (avg).toFixed(1) + '%'
 
 
     }
     else {
+        document.getElementById("displayy").style.color = "red";
         results.innerHTML = "You did not pass, your Average is " + (avg).toFixed(1) + '%'
     }
 

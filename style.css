@@ -15,7 +15,8 @@
     width: 300px;
     padding-top: 20px;
     border: solid;
-    background-color: rgb(230, 225, 225);
+    /* background-color: transparent; */
+    background-color: rgb(247, 244, 244);
     border-radius: 20px;
     /* align-items: center; */
     padding-left: 15px;
