@@ -11,7 +11,13 @@ document.getElementById("calcAvg").onclick = function avgFn(){
     markIt = Number(document.getElementById("itMark").value);
     markScience = Number(document.getElementById("scienceMark").value);
     let avg = (markMath + markGeo + markEng + markAfr + markBusiness + markIt + markScience)/7 ; 
+    let results = document.getElementById("displayy");
+    if ( avg > 5)
+    {
+        results.innerHTML = "Pass"
+    }
 
 
-    alert('Average is ' + (avg).toFixed(1) );
+    // alert('Average is ' + (avg).toFixed(1));
+    
 }
