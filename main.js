@@ -1,12 +1,17 @@
-// let firstMark = Number;
-// let secondMark = Number;
-// let avg = (firstMark + secondMark)/2
+// let firstMark;
+// let secondMark;
+// let thirdMark; 
+// let avg = firstMark*secondMark;
+document.getElementById("calcAvg").onclick = function avgFn(){
+    markMath = Number(document.getElementById("mathMark").value);
+    markGeo = Number(document.getElementById("geoMark").value);
+    markEng = Number(document.getElementById("engMark").value);
+    markAfr = Number(document.getElementById("afrMark").value);
+    markBusiness = Number(document.getElementById("businessMark").value);
+    markIt = Number(document.getElementById("itMark").value);
+    markScience = Number(document.getElementById("scienceMark").value);
+    let avg = (markMath + markGeo + markEng + markAfr + markBusiness + markIt + markScience)/7 ; 
 
-// avg = document.getElementById("calcAvg").onclick = function avgFn (){
-//     avg = document.getElementById("mathMark").value;
-//     // secondMark = document.getElementById("geoMark").value;
 
-//     alert('Average is ' + `${avg}`);
-// }
-
-let firstMark = document.getElementById("mathMark").value
+    alert('Average is ' + (avg).toFixed(1) );
+}
