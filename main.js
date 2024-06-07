@@ -1,24 +1,24 @@
-     function avgFn(){
-       let markMath = Number(document.getElementById("mathMark").value);
-       let  markGeo = Number(document.getElementById("geoMark").value);
-       let markEng = Number(document.getElementById("engMark").value);
-       let   markAfr = Number(document.getElementById("afrMark").value);
-       let  markBusiness = Number(document.getElementById("businessMark").value);
-       let  markIt = Number(document.getElementById("itMark").value);
-       let markScience = Number(document.getElementById("scienceMark").value);
-       let avg = (markMath + markGeo + markEng + markAfr + markBusiness + markIt + markScience)/7; 
+// function tellFortune () {
+
+//     let numChildren = prompt('Enter how many kids you want');
+//     let partnerName = prompt('Enter partner name');
+//     let location = prompt('Enter where you want to live');
+//     let jobTitle = prompt('Enter dream job') 
+//     let results = document.getElementById('display')
+//     results.innerHTML = 'You will be a ' + jobTitle + ' in ' + location + ', and married to ' + partnerName + ' with ' + numChildren + ' kids' 
+
+// }
+
+function renderResults() {
+    tellFortune("2", "Sally", "JHB", "Developer");
+    tellFortune("3", "Rihanna", "PTA", "Chef");
+    tellFortune("1", "Susan", "DBN", "Teacher");
+}
 
 
-        let results = document.getElementById("displayy");
-   
-    if ( avg >= 50)
-    {
-        document.getElementById("displayy").style.color = "green";
-        results.innerHTML = "You have passed with an Average of " + (avg).toFixed(1) + '%'
-    }
-    else {
-        document.getElementById("displayy").style.color = "red";
-        results.innerHTML = "You did not pass, your Average is " + (avg).toFixed(1) + '%'
-    }
-    
+function tellFortune( noChildren, partersName, location, jobRole) {
+    // let results = document.getElementById('display');
+    console.log('You will be a ' + jobRole + ' in ' + location + ', and married to ' + partersName + ' with ' + noChildren + ' kids')
+return tellFortune
+
 }
