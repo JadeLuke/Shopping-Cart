@@ -1,10 +1,4 @@
-// let firstMark;
-// let secondMark;
-// let thirdMark; 
-// let avg = firstMark*secondMark;
-
-// document.getElementById("calcAvg").onclick = 
-    function avgFn(){
+     function avgFn(){
        let markMath = Number(document.getElementById("mathMark").value);
        let  markGeo = Number(document.getElementById("geoMark").value);
        let markEng = Number(document.getElementById("engMark").value);
@@ -21,15 +15,10 @@
     {
         document.getElementById("displayy").style.color = "green";
         results.innerHTML = "You have passed with an Average of " + (avg).toFixed(1) + '%'
-
-
     }
     else {
         document.getElementById("displayy").style.color = "red";
         results.innerHTML = "You did not pass, your Average is " + (avg).toFixed(1) + '%'
     }
-
-
-    // alert('Average is ' + (avg).toFixed(1));
     
 }
