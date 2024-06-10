@@ -1,12 +1,11 @@
 function calculateAge (birthYear, currentYear) {
 
-    // let birthYear = Number;
-    // let currentYear = Number;
-    console.log('You are either' + (birthYear-currentYear) + ' or ' + (currentYear - birthYear))
+    console.log('You are either ' + (currentYear-birthYear) + ' or ' + (birthYear - currentYear))
 }
 
 function ageResults () {
     calculateAge("2000", "2024");
-    calculateAge("2024", "2000");
+    calculateAge("1989", "2024");
+    calculateAge("1994", "2024");
 
 }
