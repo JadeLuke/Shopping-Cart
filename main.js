@@ -1,6 +1,6 @@
 function calculateAge (birthYear, currentYear) {
 
-    console.log('You are either ' + (currentYear-birthYear) + ' or ' + ((currentYear - birthYear)+1))
+    console.log('You are either ' + (currentYear-birthYear) + ' or ' + ((currentYear - birthYear)-1))
 }
 
 function ageResults () {
